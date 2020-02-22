@@ -8,8 +8,8 @@ class EmailAddressParser
   end   
   
   def parse 
-    lines = email_string.split(/\r\n/).map do |line|
-      line.split(',') || line.split(' ')
+    lines = email_string.map do |line|
+      line.split(',')
     end 
   end   
    

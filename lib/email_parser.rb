@@ -3,7 +3,7 @@
 class EmailAddressParser
   attr_accessor : email 
   
-  def parses(email)
+  def initialize(email)
     @email = email 
   end   
   

@@ -11,7 +11,7 @@ class EmailAddressParser
     email_string.split.map do |line|
       line.split(',')
     end 
-    .flatten.uniq
+    .flatten.uniq #.flatten returns a one-dimensional array, .uniq 
   end   
    
   

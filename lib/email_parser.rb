@@ -8,7 +8,7 @@ class EmailAddressParser
   end   
   
   def parse 
-    email_string.spli.map do |line|
+    email_string.split.map do |line|
       line.split(',')
     end 
     .flatten.uniq

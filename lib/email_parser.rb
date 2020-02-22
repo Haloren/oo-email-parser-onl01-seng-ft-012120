@@ -6,12 +6,13 @@ class EmailAddressParser
   def initialize(email_string)
     @email_string = email_string 
   end   
-  
+  require 'pry' 
   def parse 
+    binding.pry
     email_string.split.map do |line|
       line.split(',')
     end 
-    .flatten.uniq #.flatten returns a one-dimensional array, .uniq 
+    .flatten.uniq #.flatten returns a one-dimensional array, .uniq removes duplicates
   end   
    
   

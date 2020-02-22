@@ -9,8 +9,9 @@ class EmailAddressParser
   
   def parse 
     lines = email_string.split(/\r\n/).map do |line|
-      line.split(',').flatten.uniq
+      line.split(',')
     end 
+    .flatten.uniq
   end   
    
   
